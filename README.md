@@ -14,31 +14,31 @@
 
 1. /register : You can register new user.
 
-![[https://github.com/divyanksingh-git/TodoAPI/blob/main/pic/Pasted%20image%2020230211194427.png]]
+![Pasted image 20230211194427](https://user-images.githubusercontent.com/26967154/218264994-1cf51742-a9cb-4b91-b7fb-32031bd1dd56.png)
 
 2. /login : login as a user and generate a authentication token.
 
-![[pic/Pasted image 20230211194858.png]]
+![Pasted image 20230211194858](https://user-images.githubusercontent.com/26967154/218265167-2c23a9f8-1688-4e9b-97f0-e20e5c2bb5cd.png)
 
 3. /all : Get all the todo tasks
 
-![[pic/Pasted image 20230211195044.png]]
+![Pasted image 20230211195044](https://user-images.githubusercontent.com/26967154/218265224-11e265bc-8b08-4955-8220-cb2ea61ed659.png)
 
 4. /get/{name} : Get the specific task using name
 
-![[pic/Pasted image 20230211195438.png]]
+![Pasted image 20230211195438](https://user-images.githubusercontent.com/26967154/218265236-319f2744-903e-4ad0-911a-61e90abbc48e.png)
 
 5. /create : create the task and append it in todo list
 
- ![[pic/Pasted image 20230211195356.png]]
+![Pasted image 20230211195356](https://user-images.githubusercontent.com/26967154/218265247-5011a54f-3282-4e1e-b83a-554c05de4c08.png)
 
 7. /update : update the specific task 
 
-![[pic/Pasted image 20230211195534.png]]
+![Pasted image 20230211195534](https://user-images.githubusercontent.com/26967154/218265258-ce16101a-e562-4b3f-9774-cdc9529f1331.png)
 
 8. /delete : delete a task
 
-![[pic/Pasted image 20230211195612.png]]
+![Pasted image 20230211195612](https://user-images.githubusercontent.com/26967154/218265263-e43df92c-127e-4908-a623-0f97f2f63fdf.png)
 
 
 ### <u>How To Run:</u>
@@ -57,9 +57,9 @@
 
 ### <u>Working Screenshots</u>
 
-![[pic/Pasted image 20230211200525.png]]
-![[pic/Pasted image 20230211200735.png]]
-![[pic/Pasted image 20230211200846.png]]
+![Pasted image 20230211200525](https://user-images.githubusercontent.com/26967154/218265273-59a87c18-d144-4c89-a240-a4dd6db5cd93.png)
+![Pasted image 20230211200735](https://user-images.githubusercontent.com/26967154/218265295-9f7fa8b7-b171-4c2d-824d-59e387b68876.png)
+![Pasted image 20230211200846](https://user-images.githubusercontent.com/26967154/218265328-03f629d1-d07c-4dbf-9748-59d6e124b2f8.png)
 
 ### <u>Improvements that can be implemented :</u>
 
