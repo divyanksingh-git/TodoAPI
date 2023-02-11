@@ -1,17 +1,23 @@
+#importing python dependencies
 from fastapi import FastAPI, Depends, HTTPException
+
+#importing user created file
 from .userAuth import AuthHandler
 from .userSchema import AuthDetails
-
 from . import db
 from . import modal
 
-
+#initializing fastapi, authintication handler and user list
 app = FastAPI()
-
-
 auth_handler = AuthHandler()
 users = []
 
+# home route
+@app.get('/')
+def home():
+    return{"data":"Todo API using FastAPI python"}
+
+# User registration and login endpoint
 @app.post('/register', status_code=201)
 def register(auth_details: AuthDetails):
     if any(x['username'] == auth_details.username for x in users):
@@ -37,6 +43,8 @@ def login(auth_details: AuthDetails):
     token = auth_handler.encode_token(user['username'])
     return { 'token': token }
 
+
+# Todo API endpoints
 @app.get("/all")
 def getAll(user = Depends(auth_handler.auth_wrapper)):
     data = db.getAll()

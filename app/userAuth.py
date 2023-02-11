@@ -1,3 +1,4 @@
+# Importing python dependencies
 import jwt
 from fastapi import HTTPException, Security
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
@@ -10,12 +11,15 @@ class AuthHandler():
     pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
     secret = 'SECRET'
 
+    # Function to get hash of plain text password
     def get_password_hash(self, password):
         return self.pwd_context.hash(password)
 
+    # Function to verify password
     def verify_password(self, plain_password, hashed_password):
         return self.pwd_context.verify(plain_password, hashed_password)
 
+    # Encode the jwt token using secret and set expiry time
     def encode_token(self, user_id):
         payload = {
             'exp': datetime.utcnow() + timedelta(days=0, minutes=30),

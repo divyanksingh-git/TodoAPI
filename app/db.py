@@ -1,14 +1,14 @@
+# Importing python dependencies
 import pymongo
 
+# Initializing mongodb
 mongoURI = "mongodb://localhost:27017"
-
 client = pymongo.MongoClient(mongoURI)
-
 db = client["TODO"]
 collection = db['todo']
 
-# CRUD operations
 
+# CRUD operations
 def create(data):
     data = dict(data)
     response = collection.insert_one(data)
