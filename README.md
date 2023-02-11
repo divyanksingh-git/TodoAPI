@@ -14,7 +14,7 @@
 
 1. /register : You can register new user.
 
-![[pic/Pasted image 20230211194427.png]]
+![[https://github.com/divyanksingh-git/TodoAPI/blob/main/pic/Pasted%20image%2020230211194427.png]]
 
 2. /login : login as a user and generate a authentication token.
 
